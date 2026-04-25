@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+homeshield.egg-info/
+outputs/
+reports/
+homeshield.log
+.DS_Store

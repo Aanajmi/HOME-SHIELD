@@ -90,14 +90,14 @@ Optional:
 
 ## Installation
 
-### Option 1: install from the repo
+Step 1: install from the repo
 ```bash
-git clone https://github.com/aanajmi02/HOME-SHIELD.git
+git clone https://github.com/aanajmi/HOME-SHIELD.git
 cd HOME-SHIELD
 pip install -e .
 ```
 
-### Option 2: install the dependency manually
+Step 1: Install the dependency manually
 ```bash
 pip install jinja2
 ```
@@ -111,24 +111,24 @@ Show help:
 python homeshield_main.py --help
 ```
 
-Or, if installed with `pip install -e .`:
+Or, if installed with `pip install -e .`: (step 1)
 ```bash
 homeshield --help
 ```
 
 ### Example measure command
 ```bash
-homeshield measure --label baseline_iot_run1 --vantage iot --iface en0 --rounds 5 --interval 10 --listen 4 --ports 80,443,445,554,1883
+homeshield measure --label (file name) --vantage iot --iface (interface) --rounds 5 --interval 10 --listen 4 --ports 80,443,445,554,1883
 ```
 
 ### Example diff command
 ```bash
-homeshield diff --before outputs/baseline_iot_run1/run.json --after outputs/blackhole_111_run2/run.json --out outputs/blackhole_111_diff.json
+homeshield diff --before outputs/(baseline file name)/run.json --after outputs/(new file name)/run.json --out outputs/blackhole_111_diff.json
 ```
 
 ### Example report command
 ```bash
-homeshield report --diff outputs/blackhole_111_diff.json --out reports/blackhole_111_diff.html
+homeshield report --diff outputs/(file name).json --out reports/blackhole_111_diff.html
 ```
 
 ---

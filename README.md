@@ -95,6 +95,7 @@ Step 1: install from the repo
 git clone https://github.com/aanajmi/HOME-SHIELD.git
 cd HOME-SHIELD
 pip install -e .
+or if pip is not found: python3 -m pip install -e .
 ```
 
 Step 1: Install the dependency manually
